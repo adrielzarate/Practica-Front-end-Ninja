@@ -1,0 +1,10 @@
+.btn {
+    @extend .font--body;
+}
+
+.btn-xs, .btn-group-xs > .btn {
+    padding: 0.25rem 0.5rem;
+    font-size: $font-size-sm;
+    line-height: 1;
+    border-radius: 0.2rem;
+}

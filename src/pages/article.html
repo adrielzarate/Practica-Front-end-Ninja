@@ -1,3 +1,62 @@
 <%= require('html-loader!./partials/header.html') %>
-    <h1>Articulo</h1>
-<%= require('html-loader!./partials/footer.html') %>
+    <div class="container-fluid article-hero-image">
+        <div class="row">
+            <div class="col-12 p-0">
+                <img class="w-100" src="<%= './assets/img/art-2-lg.jpg' %>" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="article-page container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card mb-3">
+                    <div class="card-body py-5">
+                        <article class="article" data-like="false">
+                            <header class="mb-3">
+                                <h1 class="article__title text-uppercase mb-4">How to eliminate (or deal with) hidden dependencies</h1>
+                                <!-- <h1 class="article__title text-uppercase"><%= htmlWebpackPlugin.options.title %></h1> -->
+                                <time class="article__date d-block mb-2">18 de Marzo de 2018</time>
+                                <a class="link mr-1" href=""><i class="fas fa-comment"></i> 1</a>
+                                <button class="btn btn-link article__like"><i class="far fa-heart"></i> Te gusta</button>
+                            </header>
+                            <div class="article__content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque facilis hic unde, libero ex id. Soluta itaque nisi voluptatibus, doloribus.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit tempore animi nulla dolorum maiores deserunt molestiae possimus, sequi fugiat, <strong>harum inventore earum</strong> incidunt perferendis dignissimos? Assumenda qui <em>quasi eaque porro</em>.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, commodi amet ex neque nostrum, impedit consequatur earum expedita vel iusto exercitationem velit. <a class="link" href="#">Non eos voluptas quam quos</a> distinctio, consequatur debitis!</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, veritatis, atque! Suscipit veniam explicabo possimus! Ipsa esse exercitationem molestias veniam expedita similique autem aliquid, aperiam cupiditate nostrum cumque dignissimos doloribus, voluptate accusantium veritatis dolorum aspernatur, at maiores tempore. Esse nisi doloribus unde placeat reiciendis quisquam quis, porro vitae labore cum.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia dignissimos, earum nesciunt eius! Atque, quibusdam.</p>
+                            </div>
+                        </article>
+                        <hr>
+
+                        <%= require('html-loader!./partials/comments.html') %>
+
+                    </div>
+                </div>
+            </div>
+            <aside class="aside col-md-4">
+                <div class="card">
+                    <img class="img-fluid mb-3" src="<%= './assets/img/writer.jpg' %>" alt="">
+                    <div class="card-body">
+                        <div class="aside__title aside__title--big mb-2">Lindsay Hunter</div>
+                        <p class="mb-5">Lindsay Hunter is the author of two story collections and two novels, most recently Eat Only When You’re Hungry. She lives in Chicago.</p>
+                        <h2 class="aside__title">Más de Lindsay Hunter</h2>
+                        <ul class="list-links list-unstyled mb-5">
+                            <li class="list-links__item"><a class="link" href="#">Having a Child Made Me Feel Trapped</a></li>
+                            <li class="list-links__item"><a class="link" href="#">I Would Never Hit My Children</a></li>
+                            <li class="list-links__item"><a class="link" href="#">Motherhood in the Age of Instagram</a></li>
+                            <li class="list-links__item"><a class="link" href="#">JavaScript Objects, Square Brackets and Algorithms</a></li>
+                        </ul>
+                        <h2 class="aside__title">Relacionados</h2>
+                        <ul class="list-links list-unstyled mb-5">
+                            <li class="list-links__item"><a class="link" href="#">How to avoid common beginner pitfalls and start coding like a pro</a></li>
+                            <li class="list-links__item"><a class="link" href="#">Introducing 24/7 freeCodeCamp Radio: chill tunes you can code to</a></li>
+                            <li class="list-links__item"><a class="link" href="#">Why you don’t need to excel at math to learn how to program</a></li>
+                            <li class="list-links__item"><a class="link" href="#">Practical data science: tinker, tailor, soldier, spy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <%= require('html-loader!./partials/footer.html') %>

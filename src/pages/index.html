@@ -1,33 +1,120 @@
 <%= require('html-loader!./partials/header.html') %>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <a class="navbar-brand" href="#">Fixed navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
-        </ul>
-        <form class="form-inline mt-2 mt-md-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-      </div>
-    </nav>
+    <main>
+        <div class="container-fluid featured-articles mb-4">
+            <div class="row">
+                <article class="col-lg-8 article featured-article__main px-5 py-4" data-like="false">
+                    <div class="row align-items-end">
+                        <div class="col-lg-7">
+                            <a class="link" href="/article.html"><h2 class="article__title text-uppercase">How to eliminate (or deal with) hidden dependencies</h2></a>
+                            <div class="media mt-3 mb-2">
+                                <div class="media__pic mr-2"></div>
+                                <div class="media-body">
+                                    <time class="article__date d-block">18 Marzo, 2018</time>
+                                    <div class="article-info__name">Nombre Apellido</div>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque facilis hic unde, libero ex id. Soluta itaque nisi voluptatibus, doloribus</p>
+                            <a class="link mr-1" href=""><i class="fas fa-comment"></i> 1</a>
+                            <button class="btn btn-link article__like"><i class="far fa-heart"></i>
+                                <!-- <i class="fas fa-heart"></i> --></button>
+                        </div>
+                    </div>
+                </article>
+                <div class="col-lg-4 featured-articles__secondaries px-sm-5 py-4">
+                    <div class="row align-content-end flex-wrap">
+                        <article class="col-md-6 col-lg-12 article featured-article mb-4" data-like="false">
 
-    <main role="main" class="container">
-      <div class="jumbotron">
-        <h1>Navbar example</h1>
-        <p class="lead">This example is a quick exercise to illustrate how fixed to top navbar works. As you scroll, it will remain fixed to the top of your browser's viewport.</p>
-        <a class="btn btn-lg btn-primary" href="../../components/navbar/" role="button">View navbar docs &raquo;</a>
-      </div>
+                            <img class="img-fluid mb-3" src="<%= require('../assets/img/art-2-lg.jpg') %>" alt="">
+
+                            <a class="link" href="/article.html"><h2 class="article__title font--body text-uppercase">How to eliminate (or deal with) hidden dependencies</h2></a>
+                            <div class="media mt-3 mb-2">
+                                <div class="media__pic mr-2"></div>
+                                <div class="media-body">
+                                    <time class="article__date d-block">18 Marzo, 2018</time>
+                                    <div class="article-info__name">Nombre Apellido</div>
+                                </div>
+                            </div>
+                            <a class="link mr-1" href=""><i class="fas fa-comment"></i> 1</a>
+                            <button class="btn btn-link article__like"><i class="far fa-heart"></i></button>
+                        </article>
+                        <article class="col-md-6 col-lg-12 article featured-article" data-like="false">
+                            <img class="img-fluid mb-3" src="<%= require('../assets/img/art-2-lg.jpg') %>" alt="">
+                            <a class="link" href="/article.html"><h2 class="article__title font--body text-uppercase">How to eliminate (or deal with) hidden dependencies</h2></a>
+                            <div class="media mt-3 mb-2">
+                                <div class="media__pic mr-2"></div>
+                                <div class="media-body">
+                                    <time class="article__date d-block">18 Marzo, 2018</time>
+                                    <div class="article-info__name">Nombre Apellido</div>
+                                </div>
+                            </div>
+                            <a class="link mr-1" href=""><i class="fas fa-comment"></i> 1</a>
+                            <button class="btn btn-link article__like"><i class="far fa-heart"></i></button>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <article class="article col-md-6 col-lg-4 mb-4" data-like="false">
+                    <div class="card">
+                        <img class="img-fluid mb-3" src="<%= require('../assets/img/art-2-lg.jpg') %>" alt="">
+                        <div class="card-body">
+                            <a class="link" href="/article.html"><h2 class="article__title font--body text-uppercase">How to eliminate (or deal with) hidden dependencies</h2></a>
+                            <div class="media mt-3 mb-2">
+                                <div class="media__pic mr-2"></div>
+                                <div class="media-body">
+                                    <time class="article__date d-block">18 Marzo, 2018</time>
+                                    <div class="article-info__name">Nombre Apellido</div>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque facilis hic unde, libero ex id. Soluta itaque nisi voluptatibus, doloribus</p>
+                            <a class="link mr-1" href=""><i class="fas fa-comment"></i> 1</a>
+                            <button class="btn btn-link article__like"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </article>
+                <article class="article col-md-6 col-lg-4 mb-4" data-like="false">
+                    <div class="card">
+
+                        <div class="embed-responsive embed-responsive-21by9 mb-3">
+                            <video class="embed-responsive-item" src="<%= require('../assets/video/phone.mp4') %>" controls></video>
+                        </div>
+
+                        <div class="card-body">
+                            <a class="link" href="/article.html"><h2 class="article__title font--body text-uppercase">How to eliminate (or deal with) hidden dependencies</h2></a>
+                            <div class="media mt-3 mb-2">
+                                <div class="media__pic mr-2"></div>
+                                <div class="media-body">
+                                    <time class="article__date d-block">18 Marzo, 2018</time>
+                                    <div class="article-info__name">Nombre Apellido</div>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque facilis hic unde, libero ex id. Soluta itaque nisi voluptatibus, doloribus</p>
+                            <a class="link mr-1" href=""><i class="fas fa-comment"></i> 1</a>
+                            <button class="btn btn-link article__like"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </article>
+                <article class="article col-md-6 col-lg-4 mb-4" data-like="false">
+                    <div class="card">
+                        <img class="img-fluid mb-3" src="<%= require('../assets/img/art-2-lg.jpg') %>" alt="">
+                        <div class="card-body">
+                            <a class="link" href="/article.html"><h2 class="article__title font--body text-uppercase">How to eliminate (or deal with) hidden dependencies</h2></a>
+                            <div class="media mt-3 mb-2">
+                                <div class="media__pic mr-2"></div>
+                                <div class="media-body">
+                                    <time class="article__date d-block">18 Marzo, 2018</time>
+                                    <div class="article-info__name">Nombre Apellido</div>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque facilis hic unde, libero ex id. Soluta itaque nisi voluptatibus, doloribus</p>
+                            <a class="link mr-1" href=""><i class="fas fa-comment"></i> 1</a>
+                            <button class="btn btn-link article__like"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
     </main>
-<%= require('html-loader!./partials/footer.html') %>
+    <%= require('html-loader!./partials/footer.html') %>

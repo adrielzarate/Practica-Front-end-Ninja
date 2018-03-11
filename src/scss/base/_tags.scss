@@ -1,0 +1,10 @@
+body {
+    @extend .font--sans-serif;
+    @extend .font--body;
+    background-color: $gray-200;
+}
+p {
+    @extend .font--serif;
+    font-size: 1rem;
+    margin-bottom: .5rem;
+}

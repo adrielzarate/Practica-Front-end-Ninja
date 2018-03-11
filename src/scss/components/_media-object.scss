@@ -1,0 +1,11 @@
+.media__pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: $gray-500 solid thin;
+    background-image: url(./assets/img/ui/user.png);
+    background-color: $gray-300;
+    background-size: cover;
+    background-size: 150%;
+    background-position: 45% center;
+}

@@ -1,0 +1,11 @@
+.aside {
+    p {
+        @extend .font--sans-serif;
+    }
+}
+.aside__title {
+    @extend .font--lg;
+    &.aside__title--big {
+        @extend .font--bigger;
+    }
+}

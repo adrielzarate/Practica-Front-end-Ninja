@@ -1,0 +1,8 @@
+.comments-list {
+    & > .comments-list__item {
+        padding-left: 0;
+    }
+}
+.comments-list__item {
+    padding-left: 40px;
+}

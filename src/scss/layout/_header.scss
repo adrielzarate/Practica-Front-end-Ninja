@@ -1,0 +1,45 @@
+.site-header {
+    background-color: $primary;
+    .link,
+    .btn {
+        color: $white;
+    }
+}
+
+.home-btn {
+    padding: 0;
+    line-height: 0;
+}
+
+.navbar-toggler {
+    color: $white;
+    border-color: $white;
+    &:active,
+    &:focus {
+        outline: 0;
+    }
+}
+
+.site-header__search {
+    .input {
+        border: none;
+        border-bottom: rgba( $white, .35 ) solid thin;
+        background-color: transparent;
+        color: $white;
+
+        &:focus,
+        &:hover {
+            border-bottom-color: $white;
+            outline: none;
+        }
+    }
+
+    .btn {
+        &:active,
+        &:focus,
+        &:hover {
+            background-color: rgba( $white, .2 );
+            outline: none;
+        }
+    }
+}

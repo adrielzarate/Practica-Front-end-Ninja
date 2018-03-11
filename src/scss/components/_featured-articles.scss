@@ -1,0 +1,37 @@
+.featured-article__main {
+    @include bg-dark($gray-900, $white);
+    height: 100vh;
+    background-image: url(./assets/img/art-1.jpeg);
+    background-size: cover;
+    & > .row {
+        height: 100%;
+    }
+    .link,
+    .btn {
+        color: $white;
+    }
+}
+
+.featured-article__date {
+    @extend .font--sm;
+}
+
+.featured-articles__secondaries {
+    @include bg-dark($gray-900, $white);
+    & > .row {
+        height: 100%;
+    }
+    .link,
+    .btn {
+        color: $white;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .featured-articles {
+        height: 100vh;
+        & > .row {
+            height: 100%;
+        }
+    }
+}

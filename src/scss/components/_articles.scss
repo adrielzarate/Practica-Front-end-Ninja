@@ -1,0 +1,14 @@
+.article__title {
+    @extend .font--sans-serif;
+}
+
+.article__date {
+    @extend .font--body;
+}
+
+.article__like {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 5px;
+    color: $primary;
+}

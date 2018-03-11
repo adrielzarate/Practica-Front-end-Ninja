@@ -42,10 +42,12 @@ module.exports = {
                 test: /\.js$/,
                 use: 'babel-loader',
                 exclude: path.join(__dirname, 'node_modules')
-            }, {
-                test: /assets\/.*/,
+            },
+            {
+                test: /\.(webm|mp4)$/,
                 use: 'file-loader?name=[name].[ext]&useRelativePath=true'
-            }, {
+            },
+            {
                 test: /\.(jpe?g|png|gif|svg)$/,
                 use: [
                     'file-loader?name=[name].[ext]&useRelativePath=true',
@@ -59,14 +61,16 @@ module.exports = {
         new webpack.HotModuleReplacementPlugin(),
         new webpack.NamedModulesPlugin(),
         new HtmlWebpackPlugin({
-            template: path.join(__dirname, 'src/pages', 'index.html'),
+            title: 'home',
+            template: path.join(__dirname, 'src/pages/index.html'),
             minify: {
                 collapseWhitespace: true
             }
         }),
         new HtmlWebpackPlugin({
+            title: 'article',
             filename: 'article.html',
-            template: path.join(__dirname, 'src/pages', 'article.html'),
+            template: path.join(__dirname, 'src/pages/article.html'),
             minify: {
                 collapseWhitespace: true
             }
@@ -81,7 +85,8 @@ module.exports = {
         overlay: true,
         hot: true,
         contentBase: [
-            path.join(__dirname, 'src/pagess'),
+            path.join(__dirname, 'src'),
+            path.join(__dirname, 'src/pages'),
             path.join(__dirname, 'src/pages/partials')
         ],
         watchContentBase: true

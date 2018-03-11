@@ -1,0 +1,23 @@
+.font--serif {
+    font-family: 'EB Garamond', serif;
+}
+
+.font--sans-serif {
+    font-family: 'Muli', sans-serif;
+}
+
+.font--sm {
+    font-size: $font-size-sm;
+}
+
+.font--body {
+    font-size: $font-size-base;
+}
+
+.font--lg {
+    font-size: $font-size-lg;
+}
+
+.font--bigger {
+    font-size: ($font-size-base * 2);
+}
