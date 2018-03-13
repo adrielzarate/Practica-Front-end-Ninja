@@ -1,7 +1,7 @@
 .featured-article__main {
     @include bg-dark($gray-900, $white);
     height: 100vh;
-    background-image: url(./assets/img/art-1.jpeg);
+    background-image: url('#{$images-path}art-1-xxl.jpg');
     background-size: cover;
     & > .row {
         height: 100%;

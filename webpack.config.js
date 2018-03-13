@@ -11,7 +11,7 @@ let scssLoaders = [];
 if (isProduction) {
     scssLoaders = ExtractTextPlugin.extract({
         fallback: 'style-loader',
-        use: ['css-loader?url=false&sourceMap=true', 'sass-loader?sourceMap=true']
+        use: ['css-loader?&sourceMap=true', 'sass-loader?sourceMap=true']
     });
 }
 else {
@@ -78,7 +78,6 @@ module.exports = {
         new ExtractTextPlugin('style.css')
     ],
 
-
     devServer: {
         open: true,
         port: 3000,
@@ -86,8 +85,8 @@ module.exports = {
         hot: true,
         contentBase: [
             path.join(__dirname, 'src'),
-            path.join(__dirname, 'src/pages'),
-            path.join(__dirname, 'src/pages/partials')
+            path.join(__dirname, 'src', 'src/pages'),
+            path.join(__dirname, 'src', 'src/pages/partials')
         ],
         watchContentBase: true
     }
