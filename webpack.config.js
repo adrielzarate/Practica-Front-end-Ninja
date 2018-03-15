@@ -85,8 +85,8 @@ module.exports = {
         hot: true,
         contentBase: [
             path.join(__dirname, 'src'),
-            path.join(__dirname, 'src', 'src/pages'),
-            path.join(__dirname, 'src', 'src/pages/partials')
+            path.join(__dirname, 'src/pages'),
+            path.join(__dirname, 'src/pages/partials')
         ],
         watchContentBase: true
     }

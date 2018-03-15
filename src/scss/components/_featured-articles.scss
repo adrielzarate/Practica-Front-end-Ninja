@@ -1,8 +1,7 @@
 .featured-article__main {
     @include bg-dark($gray-900, $white);
     height: 100vh;
-    background-image: url('#{$images-path}art-1-xxl.jpg');
-    background-size: cover;
+    overflow:hidden;
     & > .row {
         height: 100%;
     }
@@ -10,6 +9,26 @@
     .btn {
         color: $white;
     }
+}
+
+.bg {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+}
+
+.bg__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%;
+  overflow-x: hidden;
 }
 
 .featured-article__date {

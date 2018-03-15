@@ -1,14 +1,19 @@
 <%= require('html-loader!./partials/header.html') %>
     <div class="container-fluid article-hero-image">
         <div class="row">
-            <div class="col-12 p-0">
-                <img class="w-100" src="<%= './assets/img/art-2-lg.jpg' %>" alt="">
+            <div class="col-12 px-0 pt-7">
+                <picture>
+                    <source class="w-100" media="(min-width: 1200px)" srcset="<%= require('../assets/img/art-3-xxl.jpg') %>">
+                    <source class="w-100" media="(min-width: 576px)" srcset="<%= require('../assets/img/art-3-xl.jpg') %>">
+                    <source class="w-100" srcset="<%= require('../assets/img/art-3-lg.jpg') %>">
+                    <img class="w-100" src="<%= require('../assets/img/art-3-lg.jpg') %>" alt="">
+                </picture>
             </div>
         </div>
     </div>
     <div class="article-page container">
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-lg-8">
                 <div class="card mb-3">
                     <div class="card-body py-5">
                         <article class="article" data-like="false">
@@ -34,9 +39,16 @@
                     </div>
                 </div>
             </div>
-            <aside class="aside col-md-4">
+            <aside class="aside col-lg-4">
                 <div class="card">
-                    <img class="img-fluid mb-3" src="<%= './assets/img/writer.jpg' %>" alt="">
+
+                    <picture>
+                        <source class="img-fluid mb-3" media="(min-width: 992px)" srcset="<%= require('../assets/img/writer-md.jpg') %>">
+                        <source class="img-fluid mb-3" media="(min-width: 400px)" srcset="<%= require('../assets/img/writer-xl.jpg') %>">
+                        <source class="img-fluid mb-3" srcset="<%= require('../assets/img/writer-md.jpg') %>">
+                        <img class="img-fluid mb-3" src="<%= require('../assets/img/writer-xl.jpg') %>" alt="">
+                    </picture>
+
                     <div class="card-body">
                         <div class="aside__title aside__title--big mb-2">Lindsay Hunter</div>
                         <p class="mb-5">Lindsay Hunter is the author of two story collections and two novels, most recently Eat Only When You’re Hungry. She lives in Chicago.</p>

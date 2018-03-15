@@ -7,6 +7,7 @@ export class DateArticles {
     }
 
     getTime(el) {
+
         const pubDate = el.getAttribute('datetime');
         const dateDiff = this.moment.duration(this.now.diff(pubDate));
 
@@ -43,6 +44,5 @@ export class DateArticles {
             element.innerHTML = self.timeInArticle(timeData);
         });
     }
-
 }
 

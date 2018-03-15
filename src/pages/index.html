@@ -4,6 +4,16 @@
             <div class="row">
 
                 <article class="col-lg-8 article featured-article__main px-5 py-4" data-like="false">
+
+                    <div class="bg">
+                        <picture>
+                            <source class="bg__image" media="(min-width: 1200px)" srcset="<%= require('../assets/img/art-3-xxl.jpg') %>">
+                            <source class="bg__image" media="(min-width: 576px)" srcset="<%= require('../assets/img/art-3-xl.jpg') %>">
+                            <source class="bg__image" srcset="<%= require('../assets/img/art-3-lg.jpg') %>">
+                            <img class="bg__image" src="<%= require('../assets/img/art-3-lg.jpg') %>" alt="">
+                        </picture>
+                    </div>
+
                     <div class="row align-items-end">
                         <div class="col-lg-7">
                             <a class="link" href="/article.html"><h2 class="article__title text-uppercase">How to eliminate (or deal with) hidden dependencies</h2></a>
@@ -20,14 +30,21 @@
                                 <!-- <i class="fas fa-heart"></i> --></button>
                         </div>
                     </div>
+
                 </article>
 
                 <div class="col-lg-4 featured-articles__secondaries px-sm-5 py-4">
                     <div class="row align-content-end flex-wrap">
                         <article class="col-md-6 col-lg-12 article featured-article mb-4" data-like="false">
-
-                            <img class="img-fluid mb-3" src="<%= require('../assets/img/art-2-lg.jpg') %>" alt="">
-
+                            <picture>
+                                <source class="img-fluid mb-3" media="(min-width: 1200px)" srcset="<%= require('../assets/img/art-1-xl.jpg') %>">
+                                <source class="img-fluid mb-3" media="(min-width: 992px)" srcset="<%= require('../assets/img/art-1-lg.jpg') %>">
+                                <source class="img-fluid mb-3" media="(min-width: 576px)" srcset="<%= require('../assets/img/art-1-xl.jpg') %>">
+                                <source class="img-fluid mb-3" media="(min-width: 400px)" srcset="<%= require('../assets/img/art-1-lg.jpg') %>">
+                                <source class="img-fluid mb-3" media="(min-width: 320px)" srcset="<%= require('../assets/img/art-1-md.jpg') %>">
+                                <source class="img-fluid mb-3" srcset="<%= require('../assets/img/art-1-sm.jpg') %>">
+                                <img class="img-fluid mb-3" src="<%= require('../assets/img/art-1-lg.jpg') %>" alt="">
+                            </picture>
                             <a class="link" href="/article.html"><h2 class="article__title font--body text-uppercase">How to eliminate (or deal with) hidden dependencies</h2></a>
                             <div class="media mt-3 mb-2">
                                 <div class="media__pic mr-2"></div>
@@ -40,7 +57,15 @@
                             <button class="btn btn-link article__like"><i class="far fa-heart"></i></button>
                         </article>
                         <article class="col-md-6 col-lg-12 article featured-article" data-like="false">
-                            <img class="img-fluid mb-3" src="<%= require('../assets/img/art-2-lg.jpg') %>" alt="">
+                            <picture>
+                                <source class="img-fluid mb-3" media="(min-width: 1200px)" srcset="<%= require('../assets/img/art-2-xl.jpg') %>">
+                                <source class="img-fluid mb-3" media="(min-width: 992px)" srcset="<%= require('../assets/img/art-2-lg.jpg') %>">
+                                <source class="img-fluid mb-3" media="(min-width: 576px)" srcset="<%= require('../assets/img/art-2-xl.jpg') %>">
+                                <source class="img-fluid mb-3" media="(min-width: 400px)" srcset="<%= require('../assets/img/art-2-lg.jpg') %>">
+                                <source class="img-fluid mb-3" media="(min-width: 320px)" srcset="<%= require('../assets/img/art-2-md.jpg') %>">
+                                <source class="img-fluid mb-3" srcset="<%= require('../assets/img/art-2-sm.jpg') %>">
+                                <img class="img-fluid mb-3" src="<%= require('../assets/img/art-2-lg.jpg') %>" alt="">
+                            </picture>
                             <a class="link" href="/article.html"><h2 class="article__title font--body text-uppercase">How to eliminate (or deal with) hidden dependencies</h2></a>
                             <div class="media mt-3 mb-2">
                                 <div class="media__pic mr-2"></div>
@@ -60,7 +85,15 @@
             <div class="row">
                 <article class="article col-md-6 col-lg-4 mb-4" data-like="false">
                     <div class="card">
-                        <img class="img-fluid mb-3" src="<%= require('../assets/img/art-2-lg.jpg') %>" alt="">
+                        <picture>
+                            <source class="img-fluid mb-3" media="(min-width: 1200px)" srcset="<%= require('../assets/img/art-3-xl.jpg') %>">
+                            <source class="img-fluid mb-3" media="(min-width: 992px)" srcset="<%= require('../assets/img/art-3-lg.jpg') %>">
+                            <source class="img-fluid mb-3" media="(min-width: 576px)" srcset="<%= require('../assets/img/art-3-xl.jpg') %>">
+                            <source class="img-fluid mb-3" media="(min-width: 400px)" srcset="<%= require('../assets/img/art-3-lg.jpg') %>">
+                            <source class="img-fluid mb-3" media="(min-width: 320px)" srcset="<%= require('../assets/img/art-3-md.jpg') %>">
+                            <source class="img-fluid mb-3" srcset="<%= require('../assets/img/art-3-sm.jpg') %>">
+                            <img class="img-fluid mb-3" src="<%= require('../assets/img/art-3-lg.jpg') %>" alt="">
+                        </picture>
                         <div class="card-body">
                             <a class="link" href="/article.html"><h2 class="article__title font--body text-uppercase">How to eliminate (or deal with) hidden dependencies</h2></a>
                             <div class="media mt-3 mb-2">
@@ -79,8 +112,11 @@
                 <article class="article col-md-6 col-lg-4 mb-4" data-like="false">
                     <div class="card">
 
-                        <div class="embed-responsive article__video mb-3">
-                            <video class="embed-responsive-item" src="<%= require('../assets/video/video.mp4') %>"></video>
+                        <div class="embed-responsive video article__video mb-3">
+                            <video class="video__player embed-responsive-item" src="<%= require('../assets/video/video.mp4') %>"></video>
+                            <button class="video__btn-play-pause">
+                                <i class="fas fa-play"></i>
+                            </button>
                         </div>
 
                         <div class="card-body">
@@ -100,7 +136,15 @@
                 </article>
                 <article class="article col-md-6 col-lg-4 mb-4" data-like="false">
                     <div class="card">
-                        <img class="img-fluid mb-3" src="<%= require('../assets/img/art-2-lg.jpg') %>" alt="">
+                        <picture>
+                            <source class="img-fluid mb-3" media="(min-width: 1200px)" srcset="<%= require('../assets/img/art-1-xl.jpg') %>">
+                            <source class="img-fluid mb-3" media="(min-width: 992px)" srcset="<%= require('../assets/img/art-1-lg.jpg') %>">
+                            <source class="img-fluid mb-3" media="(min-width: 576px)" srcset="<%= require('../assets/img/art-1-xl.jpg') %>">
+                            <source class="img-fluid mb-3" media="(min-width: 400px)" srcset="<%= require('../assets/img/art-1-lg.jpg') %>">
+                            <source class="img-fluid mb-3" media="(min-width: 320px)" srcset="<%= require('../assets/img/art-1-md.jpg') %>">
+                            <source class="img-fluid mb-3" srcset="<%= require('../assets/img/art-1-sm.jpg') %>">
+                            <img class="img-fluid mb-3" src="<%= require('../assets/img/art-1-lg.jpg') %>" alt="">
+                        </picture>
                         <div class="card-body">
                             <a class="link" href="/article.html"><h2 class="article__title font--body text-uppercase">How to eliminate (or deal with) hidden dependencies</h2></a>
                             <div class="media mt-3 mb-2">
