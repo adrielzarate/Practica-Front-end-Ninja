@@ -4,6 +4,7 @@ export class DateArticles {
         this.element = document.querySelectorAll(selector);
         this.moment  = moment;
         this.now     = this.moment(new Date());
+        this.setTime();
     }
 
     getTime(el) {

@@ -2,9 +2,7 @@
     <main>
         <div class="container-fluid featured-articles mb-4">
             <div class="row">
-
-                <article class="col-lg-8 article featured-article__main px-5 py-4" data-like="false">
-
+                <article class="col-lg-8 article featured-article__main px-5 py-4" id="article_1">
                     <div class="bg">
                         <picture>
                             <source class="bg__image" media="(min-width: 1200px)" srcset="<%= require('../assets/img/art-3-xxl.jpg') %>">
@@ -13,7 +11,6 @@
                             <img class="bg__image" src="<%= require('../assets/img/art-3-lg.jpg') %>" alt="">
                         </picture>
                     </div>
-
                     <div class="row align-items-end">
                         <div class="col-lg-7">
                             <a class="link" href="/article.html"><h2 class="article__title text-uppercase">How to eliminate (or deal with) hidden dependencies</h2></a>
@@ -25,17 +22,14 @@
                                 </div>
                             </div>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque facilis hic unde, libero ex id. Soluta itaque nisi voluptatibus, doloribus</p>
-                            <a class="link mr-1" href=""><i class="fas fa-comment"></i> 1</a>
-                            <button class="btn btn-link article__like"><i class="far fa-heart"></i>
-                                <!-- <i class="fas fa-heart"></i> --></button>
+                            <a class="link mr-1" href="/article.html#article-comments"><i class="fas fa-comment"></i> 1</a>
+                            <button class="btn btn-link article__like"><i class="far fa-heart"></i></button>
                         </div>
                     </div>
-
                 </article>
-
                 <div class="col-lg-4 featured-articles__secondaries px-sm-5 py-4">
                     <div class="row align-content-end flex-wrap">
-                        <article class="col-md-6 col-lg-12 article featured-article mb-4" data-like="false">
+                        <article class="col-md-6 col-lg-12 article featured-article mb-4" id="article_2">
                             <picture>
                                 <source class="img-fluid mb-3" media="(min-width: 1200px)" srcset="<%= require('../assets/img/art-1-xl.jpg') %>">
                                 <source class="img-fluid mb-3" media="(min-width: 992px)" srcset="<%= require('../assets/img/art-1-lg.jpg') %>">
@@ -53,10 +47,10 @@
                                     <div class="article-info__name">Nombre Apellido</div>
                                 </div>
                             </div>
-                            <a class="link mr-1" href=""><i class="fas fa-comment"></i> 1</a>
+                            <a class="link mr-1" href="/article.html#article-comments"><i class="fas fa-comment"></i> 1</a>
                             <button class="btn btn-link article__like"><i class="far fa-heart"></i></button>
                         </article>
-                        <article class="col-md-6 col-lg-12 article featured-article" data-like="false">
+                        <article class="col-md-6 col-lg-12 article featured-article" id="article_3">
                             <picture>
                                 <source class="img-fluid mb-3" media="(min-width: 1200px)" srcset="<%= require('../assets/img/art-2-xl.jpg') %>">
                                 <source class="img-fluid mb-3" media="(min-width: 992px)" srcset="<%= require('../assets/img/art-2-lg.jpg') %>">
@@ -74,7 +68,7 @@
                                     <div class="article-info__name">Nombre Apellido</div>
                                 </div>
                             </div>
-                            <a class="link mr-1" href=""><i class="fas fa-comment"></i> 1</a>
+                            <a class="link mr-1" href="/article.html#article-comments"><i class="fas fa-comment"></i> 1</a>
                             <button class="btn btn-link article__like"><i class="far fa-heart"></i></button>
                         </article>
                     </div>
@@ -83,7 +77,7 @@
         </div>
         <div class="container">
             <div class="row">
-                <article class="article col-md-6 col-lg-4 mb-4" data-like="false">
+                <article class="article col-md-6 col-lg-4 mb-4" id="article_4">
                     <div class="card">
                         <picture>
                             <source class="img-fluid mb-3" media="(min-width: 1200px)" srcset="<%= require('../assets/img/art-3-xl.jpg') %>">
@@ -104,21 +98,19 @@
                                 </div>
                             </div>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque facilis hic unde, libero ex id. Soluta itaque nisi voluptatibus, doloribus</p>
-                            <a class="link mr-1" href=""><i class="fas fa-comment"></i> 1</a>
+                            <a class="link mr-1" href="/article.html#article-comments"><i class="fas fa-comment"></i> 1</a>
                             <button class="btn btn-link article__like"><i class="far fa-heart"></i></button>
                         </div>
                     </div>
                 </article>
-                <article class="article col-md-6 col-lg-4 mb-4" data-like="false">
+                <article class="article col-md-6 col-lg-4 mb-4" id="article_5">
                     <div class="card">
-
                         <div class="embed-responsive video article__video mb-3">
                             <video class="video__player embed-responsive-item" src="<%= require('../assets/video/video.mp4') %>"></video>
                             <button class="video__btn-play-pause">
                                 <i class="fas fa-play"></i>
                             </button>
                         </div>
-
                         <div class="card-body">
                             <a class="link" href="/article.html"><h2 class="article__title font--body text-uppercase">How to eliminate (or deal with) hidden dependencies</h2></a>
                             <div class="media mt-3 mb-2">
@@ -129,12 +121,12 @@
                                 </div>
                             </div>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque facilis hic unde, libero ex id. Soluta itaque nisi voluptatibus, doloribus</p>
-                            <a class="link mr-1" href=""><i class="fas fa-comment"></i> 1</a>
+                            <a class="link mr-1" href="/article.html#article-comments"><i class="fas fa-comment"></i> 1</a>
                             <button class="btn btn-link article__like"><i class="far fa-heart"></i></button>
                         </div>
                     </div>
                 </article>
-                <article class="article col-md-6 col-lg-4 mb-4" data-like="false">
+                <article class="article col-md-6 col-lg-4 mb-4" id="article_6">
                     <div class="card">
                         <picture>
                             <source class="img-fluid mb-3" media="(min-width: 1200px)" srcset="<%= require('../assets/img/art-1-xl.jpg') %>">
@@ -155,11 +147,182 @@
                                 </div>
                             </div>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque facilis hic unde, libero ex id. Soluta itaque nisi voluptatibus, doloribus</p>
-                            <a class="link mr-1" href=""><i class="fas fa-comment"></i> 1</a>
+                            <a class="link mr-1" href="/article.html#article-comments"><i class="fas fa-comment"></i> 1</a>
                             <button class="btn btn-link article__like"><i class="far fa-heart"></i></button>
                         </div>
                     </div>
                 </article>
+                <article class="article col-md-6 col-lg-4 mb-4" id="article_7">
+                    <div class="card">
+                        <picture>
+                            <source class="img-fluid mb-3" media="(min-width: 1200px)" srcset="<%= require('../assets/img/art-1-xl.jpg') %>">
+                            <source class="img-fluid mb-3" media="(min-width: 992px)" srcset="<%= require('../assets/img/art-1-lg.jpg') %>">
+                            <source class="img-fluid mb-3" media="(min-width: 576px)" srcset="<%= require('../assets/img/art-1-xl.jpg') %>">
+                            <source class="img-fluid mb-3" media="(min-width: 400px)" srcset="<%= require('../assets/img/art-1-lg.jpg') %>">
+                            <source class="img-fluid mb-3" media="(min-width: 320px)" srcset="<%= require('../assets/img/art-1-md.jpg') %>">
+                            <source class="img-fluid mb-3" srcset="<%= require('../assets/img/art-1-sm.jpg') %>">
+                            <img class="img-fluid mb-3" src="<%= require('../assets/img/art-1-lg.jpg') %>" alt="">
+                        </picture>
+                        <div class="card-body">
+                            <a class="link" href="/article.html"><h2 class="article__title font--body text-uppercase">How to eliminate (or deal with) hidden dependencies</h2></a>
+                            <div class="media mt-3 mb-2">
+                                <div class="media__pic mr-2"></div>
+                                <div class="media-body">
+                                    <time class="article__date d-block" datetime="2018-02-25T05:51:10"></time>
+                                    <div class="article-info__name">Nombre Apellido</div>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque facilis hic unde, libero ex id. Soluta itaque nisi voluptatibus, doloribus</p>
+                            <a class="link mr-1" href="/article.html#article-comments"><i class="fas fa-comment"></i> 1</a>
+                            <button class="btn btn-link article__like"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </article>
+                <article class="article col-md-6 col-lg-4 mb-4" id="article_8">
+                    <div class="card">
+                        <picture>
+                            <source class="img-fluid mb-3" media="(min-width: 1200px)" srcset="<%= require('../assets/img/art-3-xl.jpg') %>">
+                            <source class="img-fluid mb-3" media="(min-width: 992px)" srcset="<%= require('../assets/img/art-3-lg.jpg') %>">
+                            <source class="img-fluid mb-3" media="(min-width: 576px)" srcset="<%= require('../assets/img/art-3-xl.jpg') %>">
+                            <source class="img-fluid mb-3" media="(min-width: 400px)" srcset="<%= require('../assets/img/art-3-lg.jpg') %>">
+                            <source class="img-fluid mb-3" media="(min-width: 320px)" srcset="<%= require('../assets/img/art-3-md.jpg') %>">
+                            <source class="img-fluid mb-3" srcset="<%= require('../assets/img/art-3-sm.jpg') %>">
+                            <img class="img-fluid mb-3" src="<%= require('../assets/img/art-3-lg.jpg') %>" alt="">
+                        </picture>
+                        <div class="card-body">
+                            <a class="link" href="/article.html"><h2 class="article__title font--body text-uppercase">How to eliminate (or deal with) hidden dependencies</h2></a>
+                            <div class="media mt-3 mb-2">
+                                <div class="media__pic mr-2"></div>
+                                <div class="media-body">
+                                    <time class="article__date d-block" datetime="2018-03-01T05:51:10"></time>
+                                    <div class="article-info__name">Nombre Apellido</div>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque facilis hic unde, libero ex id. Soluta itaque nisi voluptatibus, doloribus</p>
+                            <a class="link mr-1" href="/article.html#article-comments"><i class="fas fa-comment"></i> 1</a>
+                            <button class="btn btn-link article__like"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </article>
+                <article class="article col-md-6 col-lg-4 mb-4" id="article_9">
+                    <div class="card">
+                        <div class="embed-responsive video article__video mb-3">
+                            <video class="video__player embed-responsive-item" src="<%= require('../assets/video/video.mp4') %>"></video>
+                            <button class="video__btn-play-pause">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <a class="link" href="/article.html"><h2 class="article__title font--body text-uppercase">How to eliminate (or deal with) hidden dependencies</h2></a>
+                            <div class="media mt-3 mb-2">
+                                <div class="media__pic mr-2"></div>
+                                <div class="media-body">
+                                    <time class="article__date d-block" datetime="2018-02-28T05:51:10"></time>
+                                    <div class="article-info__name">Nombre Apellido</div>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque facilis hic unde, libero ex id. Soluta itaque nisi voluptatibus, doloribus</p>
+                            <a class="link mr-1" href="/article.html#article-comments"><i class="fas fa-comment"></i> 1</a>
+                            <button class="btn btn-link article__like"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </article>
+                <article class="article col-md-6 col-lg-4 mb-4" id="article_10">
+                    <div class="card">
+                        <picture>
+                            <source class="img-fluid mb-3" media="(min-width: 1200px)" srcset="<%= require('../assets/img/art-3-xl.jpg') %>">
+                            <source class="img-fluid mb-3" media="(min-width: 992px)" srcset="<%= require('../assets/img/art-3-lg.jpg') %>">
+                            <source class="img-fluid mb-3" media="(min-width: 576px)" srcset="<%= require('../assets/img/art-3-xl.jpg') %>">
+                            <source class="img-fluid mb-3" media="(min-width: 400px)" srcset="<%= require('../assets/img/art-3-lg.jpg') %>">
+                            <source class="img-fluid mb-3" media="(min-width: 320px)" srcset="<%= require('../assets/img/art-3-md.jpg') %>">
+                            <source class="img-fluid mb-3" srcset="<%= require('../assets/img/art-3-sm.jpg') %>">
+                            <img class="img-fluid mb-3" src="<%= require('../assets/img/art-3-lg.jpg') %>" alt="">
+                        </picture>
+                        <div class="card-body">
+                            <a class="link" href="/article.html"><h2 class="article__title font--body text-uppercase">How to eliminate (or deal with) hidden dependencies</h2></a>
+                            <div class="media mt-3 mb-2">
+                                <div class="media__pic mr-2"></div>
+                                <div class="media-body">
+                                    <time class="article__date d-block" datetime="2018-03-01T05:51:10"></time>
+                                    <div class="article-info__name">Nombre Apellido</div>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque facilis hic unde, libero ex id. Soluta itaque nisi voluptatibus, doloribus</p>
+                            <a class="link mr-1" href="/article.html#article-comments"><i class="fas fa-comment"></i> 1</a>
+                            <button class="btn btn-link article__like"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </article>
+                <article class="article col-md-6 col-lg-4 mb-4" id="article_11">
+                    <div class="card">
+                        <div class="embed-responsive video article__video mb-3">
+                            <video class="video__player embed-responsive-item" src="<%= require('../assets/video/video.mp4') %>"></video>
+                            <button class="video__btn-play-pause">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <a class="link" href="/article.html"><h2 class="article__title font--body text-uppercase">How to eliminate (or deal with) hidden dependencies</h2></a>
+                            <div class="media mt-3 mb-2">
+                                <div class="media__pic mr-2"></div>
+                                <div class="media-body">
+                                    <time class="article__date d-block" datetime="2018-02-28T05:51:10"></time>
+                                    <div class="article-info__name">Nombre Apellido</div>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque facilis hic unde, libero ex id. Soluta itaque nisi voluptatibus, doloribus</p>
+                            <a class="link mr-1" href="/article.html#article-comments"><i class="fas fa-comment"></i> 1</a>
+                            <button class="btn btn-link article__like"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </article>
+                <article class="article col-md-6 col-lg-4 mb-4" id="article_12">
+                    <div class="card">
+                        <picture>
+                            <source class="img-fluid mb-3" media="(min-width: 1200px)" srcset="<%= require('../assets/img/art-1-xl.jpg') %>">
+                            <source class="img-fluid mb-3" media="(min-width: 992px)" srcset="<%= require('../assets/img/art-1-lg.jpg') %>">
+                            <source class="img-fluid mb-3" media="(min-width: 576px)" srcset="<%= require('../assets/img/art-1-xl.jpg') %>">
+                            <source class="img-fluid mb-3" media="(min-width: 400px)" srcset="<%= require('../assets/img/art-1-lg.jpg') %>">
+                            <source class="img-fluid mb-3" media="(min-width: 320px)" srcset="<%= require('../assets/img/art-1-md.jpg') %>">
+                            <source class="img-fluid mb-3" srcset="<%= require('../assets/img/art-1-sm.jpg') %>">
+                            <img class="img-fluid mb-3" src="<%= require('../assets/img/art-1-lg.jpg') %>" alt="">
+                        </picture>
+                        <div class="card-body">
+                            <a class="link" href="/article.html"><h2 class="article__title font--body text-uppercase">How to eliminate (or deal with) hidden dependencies</h2></a>
+                            <div class="media mt-3 mb-2">
+                                <div class="media__pic mr-2"></div>
+                                <div class="media-body">
+                                    <time class="article__date d-block" datetime="2018-02-25T05:51:10"></time>
+                                    <div class="article-info__name">Nombre Apellido</div>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque facilis hic unde, libero ex id. Soluta itaque nisi voluptatibus, doloribus</p>
+                            <a class="link mr-1" href="/article.html#article-comments"><i class="fas fa-comment"></i> 1</a>
+                            <button class="btn btn-link article__like"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </article>
+
+                <nav class="w-100 d-flex justify-content-center mt-3" aria-label="Page navigation">
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="link page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="link page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="link page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="link page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="link page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
             </div>
         </div>
     </main>

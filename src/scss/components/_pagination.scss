@@ -1,0 +1,10 @@
+.pagination {
+    .page-link {
+        background-color: transparent;
+        border: none;
+        &:hover {
+            background-color: $primary;
+            color: $white;
+        }
+    }
+}

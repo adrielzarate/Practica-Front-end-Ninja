@@ -1,7 +1,7 @@
 export class VideoControl {
     constructor(selector) {
         this.element = document.querySelectorAll(selector);
-        this.setFunctionality();
+        this.setEventListeners();
     }
 
     togglePlayPause(el, controlBtnIcon) {
@@ -16,7 +16,7 @@ export class VideoControl {
         }
     }
 
-    setFunctionality() {
+    setEventListeners() {
         const self = this;
         [].forEach.call(this.element, function(element) {
 
