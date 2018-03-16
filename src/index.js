@@ -25,6 +25,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const videoControl = new VideoControl('.video__player');
 
     const likeArticle = new LikeArticle('.article', fontawesome);
-    // const scrollTo = new ScrollTo('.btn__go-top', 'body');
+
+    const scrollTo = new ScrollTo('.btn__go-top', 'body');
 
 });
+
+window.onscroll = function() {
+    if ( (window.innerHeight + window.scrollY) >= document.body.offsetHeight ) {
+        document.querySelector('.btn__go-top').classList.add('visible');
+    }
+    if ( window.scrollY == 0 ) {
+        document.querySelector('.btn__go-top').classList.remove('visible');
+    }
+};
