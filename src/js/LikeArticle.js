@@ -2,15 +2,13 @@ export class LikeArticle {
     constructor(selector, fontawesome) {
         this.element = document.querySelectorAll(selector);
         this.storage = localStorage;
-        this.setEventListeners();
-        fontawesome.dom.i2svg({ callback: function() { this.checkLikes(); }.bind(this) });
+        fontawesome.dom.i2svg({ callback: function() { this.init(); }.bind(this) });
     }
 
-    checkLikes() {
-        for(let likedArticle in this.storage) {
-            if (likedArticle.startsWith('article')) {
-                this.setLike( document.querySelector('#'+likedArticle) );
-            }
+    checkLikes(el) {
+        const storageItemName = el.id;
+        if(this.storage.getItem(storageItemName) == 'true') {
+            this.setLike( document.querySelector('#'+storageItemName) );
         }
     }
 
@@ -26,11 +24,12 @@ export class LikeArticle {
         el.querySelector('.article__like').firstChild.dataset.prefix = 'far';
     }
 
-    setEventListeners() {
+    init() {
         const self = this;
         [].forEach.call(this.element, function(element) {
-
             const likeBtn = element.querySelector('.article__like');
+
+            self.checkLikes(element);
 
             likeBtn.addEventListener('click', function() {
                 if( element.dataset.like === 'true' ) {

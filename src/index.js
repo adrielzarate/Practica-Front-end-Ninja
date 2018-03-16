@@ -10,6 +10,7 @@ import 'moment/locale/es';
 import { DateArticles } from './js/DateArticles';
 import { VideoControl } from './js/VideoControl';
 import { LikeArticle } from './js/LikeArticle';
+import { ScrollTo } from './js/ScrollTo';
 
 // const url = 'http://localhost:3001/articles/';
 
@@ -24,5 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const videoControl = new VideoControl('.video__player');
 
     const likeArticle = new LikeArticle('.article', fontawesome);
+    // const scrollTo = new ScrollTo('.btn__go-top', 'body');
 
 });
