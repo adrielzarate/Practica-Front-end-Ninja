@@ -1,7 +1,7 @@
 export class DateArticles {
 
-    constructor(moment, selector) {
-        this.element = document.querySelectorAll(selector);
+    constructor(moment, element) {
+        this.element = document.querySelectorAll(element);
         this.moment  = moment;
         this.now     = this.moment(new Date());
         this.setTime();

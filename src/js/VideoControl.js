@@ -1,6 +1,6 @@
 export class VideoControl {
-    constructor(selector) {
-        this.element = document.querySelectorAll(selector);
+    constructor(element) {
+        this.element = document.querySelectorAll(element);
         this.setEventListeners();
     }
 
@@ -9,10 +9,12 @@ export class VideoControl {
             controlBtnIcon.classList.remove('fa-play');
             controlBtnIcon.classList.add('fa-pause');
             el.play();
+            el.classList.add('playing');
         } else {
             controlBtnIcon.classList.remove('fa-pause');
             controlBtnIcon.classList.add('fa-play');
             el.pause();
+            el.classList.remove('playing');
         }
     }
 
@@ -29,6 +31,7 @@ export class VideoControl {
             element.addEventListener('ended', function() {
                 controlBtn.firstChild.classList.remove('fa-pause');
                 controlBtn.firstChild.classList.add('fa-play');
+                this.classList.remove('playing');
             });
         });
     }

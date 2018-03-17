@@ -1,9 +1,14 @@
+
 .article__title {
-    @extend .font--sans-serif;
+    @extend .font--secondary;
 }
 
 .article__date {
     @extend .font--body;
+}
+
+.media__writer-data {
+    color: $gray-600;
 }
 
 .article__like {

@@ -2,6 +2,17 @@
     position: relative;
 }
 
+.video__player.playing {
+
+    & + .video__btn-play-pause {
+        opacity: 0;
+    }
+
+    &:hover + .video__btn-play-pause {
+        opacity: .3;
+    }
+}
+
 .video__btn-play-pause {
     position: absolute;
     z-index: 10;
@@ -14,6 +25,7 @@
     top: calc(50% - 25px);
     left: calc(50% - 25px);
     padding-top: 5px;
+    transition: .5s ease;
 
     &:hover {
         background-color: $white;

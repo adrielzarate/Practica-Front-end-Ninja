@@ -1,34 +1,37 @@
 .featured-article__main {
     @include bg-dark($gray-900, $white);
     height: 100vh;
-    overflow:hidden;
-    & > .row {
+    overflow: hidden;
+    &>.row {
         height: 100%;
     }
     .link,
     .btn {
         color: $white;
     }
+    .media__writer-data {
+        color: $white;
+    }
 }
 
 .bg {
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
 }
 
 .bg__image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  min-width: 50%;
-  min-height: 50%;
-  overflow-x: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    min-width: 50%;
+    min-height: 50%;
+    overflow-x: hidden;
 }
 
 .featured-article__date {
@@ -37,7 +40,7 @@
 
 .featured-articles__secondaries {
     @include bg-dark($gray-900, $white);
-    & > .row {
+    &>.row {
         height: 100%;
     }
     .link,
@@ -49,7 +52,7 @@
 @include media-breakpoint-up(lg) {
     .featured-articles {
         height: 100vh;
-        & > .row {
+        &>.row {
             height: 100%;
         }
     }

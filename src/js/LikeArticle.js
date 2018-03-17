@@ -1,6 +1,6 @@
 export class LikeArticle {
-    constructor(selector, fontawesome) {
-        this.element = document.querySelectorAll(selector);
+    constructor(element, fontawesome) {
+        this.element = document.querySelectorAll(element);
         this.storage = localStorage;
         fontawesome.dom.i2svg({ callback: function() { this.init(); }.bind(this) });
     }
