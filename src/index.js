@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const scrollTo = new ScrollTo('.btn__go-top', 'body');
 
     const commentsService = new CommentsService(url);
-    const wordsCount = new WordsCount('#message', 3);
+    const wordsCount = new WordsCount('#message', 120);
     const formController = new FormController('.comment-form', commentsService, PubSub, wordsCount);
     const commentsListController = new CommentsListController('.comments-list', commentsService, PubSub);
     commentsListController.loadComments();

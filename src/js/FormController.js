@@ -8,7 +8,6 @@ export class FormController {
         this.addEventListeners();
     }
 
-
     setLoading(loading) {
         this.loading = loading;
         this.element.querySelectorAll('input, button').forEach(item => {
@@ -26,7 +25,7 @@ export class FormController {
             event.preventDefault();
             if (this.loading == false) {
                 this.setLoading(true);
-                let comment = this.buildComment();
+                let comment = this.commentData();
                 this.commentsService.save(comment).then(createdComment => {
                     // comentario creado
                     this.element.reset(); // limpia el formulario
