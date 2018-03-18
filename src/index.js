@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const commentsService = new CommentsService(url);
     const wordsCount = new WordsCount('#message', 120);
-    const formController = new FormController('.comment-form', commentsService, PubSub, wordsCount);
+
     const commentsListController = new CommentsListController('.comments-list', commentsService, PubSub);
     const windowScroll = new WindowScroll({
         onTop : {
@@ -43,7 +43,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 document.querySelector('.btn__go-top').classList.add('visible');
             },
             loadComments: function() {
-                commentsListController.loadComments();
+                if ( document.querySelector('.article-page') ) {
+                    commentsListController.loadComments();
+                    const formController = new FormController('.comment-form', commentsService, PubSub, wordsCount);
+                }
             }
         }
     });
