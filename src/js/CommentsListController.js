@@ -9,15 +9,15 @@ export class CommentsListController {
     }
 
     showLoadingMessage() {
-        this.element.innerHTML = '<div class="loading">Cargando...</div>';
+        this.element.innerHTML = '<div class="article-comments__loading d-flex align-items-center">Cargando...</div>';
     }
 
     showErrorMessage() {
-        this.element.innerHTML = '<div class="error></div>';
+        this.element.innerHTML = '<div class="article-comments__error></div>';
     }
 
     showNoCommentsMessage() {
-        this.element.innerHTML = '<div class="empty">No hay comentarios</div>';
+        this.element.innerHTML = '<div class="article-comments__empty">No hay comentarios</div>';
     }
 
     renderComments(comments) {

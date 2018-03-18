@@ -6,3 +6,17 @@
 .comments-list__item {
     padding-left: 40px;
 }
+
+.article-comments__loading {
+    &::after {
+        content: "";
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        border: $primary solid 3px;
+        border-top-color: transparent;
+        border-radius: 50%;
+        margin-left: 20px;
+        animation: spin 2s linear infinite;
+    }
+}
