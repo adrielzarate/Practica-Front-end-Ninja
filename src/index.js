@@ -41,13 +41,14 @@ document.addEventListener('DOMContentLoaded', () => {
         onBottom : {
             btnGoTopShown : function() {
                 document.querySelector('.btn__go-top').classList.add('visible');
-            },
-            loadComments: function() {
-                if ( document.querySelector('.article-page') ) {
-                    commentsListController.loadComments();
-                    const formController = new FormController('.comment-form', commentsService, PubSub, wordsCount);
-                }
             }
+        },
+        onTarget: {
+            targetFn: function() {
+                commentsListController.loadComments();
+                const formController = new FormController('.comment-form', commentsService, PubSub, wordsCount);
+            },
+            target: document.querySelector('#article-comments')
         }
     });
 

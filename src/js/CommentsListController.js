@@ -13,7 +13,7 @@ export class CommentsListController {
     }
 
     showErrorMessage() {
-        this.element.innerHTML = '<div class="article-comments__error></div>';
+        this.element.innerHTML = '<div class="article-comments__error d-flex align-items-center">Error al cargar los comentarios</div>';
     }
 
     showNoCommentsMessage() {
@@ -46,8 +46,7 @@ export class CommentsListController {
             } else {
                 this.renderComments(comments);
             }
-
-        }).catch(error => {
+        }).catch(err => {
             this.showErrorMessage();
         });
     }

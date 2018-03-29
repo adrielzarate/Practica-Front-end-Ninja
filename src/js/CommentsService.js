@@ -6,19 +6,27 @@ export class CommentsService {
     }
 
     async list() {
-        const response = await fetch(this.url);
-        return response.json();
+        try {
+            const response = await fetch(this.url);
+            return response.json();
+        } catch(err) {
+            console.log(err);
+        }
     }
 
     async save(song) {
-        const response = await fetch(this.url, {
-            method: 'post',
-            body: JSON.stringify(song),
-            headers: {
-                'Content-Type': 'application/json'
-            }
-        });
-        return response.json();
+        try {
+            const response = await fetch(this.url, {
+                method: 'post',
+                body: JSON.stringify(song),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+            return response.json();
+        } catch(err) {
+            console.log(err);
+        }
     }
 }
 
